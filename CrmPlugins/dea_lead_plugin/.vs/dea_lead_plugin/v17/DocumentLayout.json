@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_lead_plugin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B98894E0-111A-4DC8-875F-9E5C901C5CDA}|dea_lead_plugin.csproj|c:\\users\\deaar\\onedrive\\desktop\\misc\\work\\learning javascript\\microsoft power platform dev\\labfirstplugin\\dea_lead_plugin\\currentdateforleadname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B98894E0-111A-4DC8-875F-9E5C901C5CDA}|dea_lead_plugin.csproj|solutionrelative:currentdateforleadname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|dea_lead_plugin||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CurrentDateforLeadName.cs",
+              "DocumentMoniker": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_lead_plugin\\CurrentDateforLeadName.cs",
+              "RelativeDocumentMoniker": "CurrentDateforLeadName.cs",
+              "ToolTip": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_lead_plugin\\CurrentDateforLeadName.cs",
+              "RelativeToolTip": "CurrentDateforLeadName.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T09:25:19.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dea_lead_plugin",
+              "DocumentMoniker": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_lead_plugin\\dea_lead_plugin.csproj",
+              "RelativeDocumentMoniker": "dea_lead_plugin.csproj",
+              "ToolTip": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_lead_plugin\\dea_lead_plugin.csproj",
+              "RelativeToolTip": "dea_lead_plugin.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-02T09:34:05.794Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

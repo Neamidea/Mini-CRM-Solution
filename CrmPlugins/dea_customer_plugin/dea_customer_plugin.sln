@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37314.3 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dea_customer_plugin", "dea_customer_plugin.csproj", "{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FC82D2A-B62C-4FA5-BF45-B821B6F2A262}
+	EndGlobalSection
+EndGlobal

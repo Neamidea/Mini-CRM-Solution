@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_customer_plugin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}|dea_customer_plugin.csproj|c:\\users\\deaar\\onedrive\\desktop\\misc\\work\\learning javascript\\microsoft power platform dev\\labfirstplugin\\dea_customer_plugin\\blockcreditlimitonfrozenstatuspreimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}|dea_customer_plugin.csproj|solutionrelative:blockcreditlimitonfrozenstatuspreimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|dea_customer_plugin||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}|dea_customer_plugin.csproj|c:\\users\\deaar\\onedrive\\desktop\\misc\\work\\learning javascript\\microsoft power platform dev\\labfirstplugin\\dea_customer_plugin\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}|dea_customer_plugin.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD6FAA6E-74EB-4074-8A70-4AD32E838ADC}|dea_customer_plugin.csproj|c:\\users\\deaar\\onedrive\\desktop\\misc\\work\\learning javascript\\microsoft power platform dev\\labfirstplugin\\dea_customer_plugin\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|f8d6553f-f752-4dbf-acb6-f291b744a792"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dea_customer_plugin",
+              "DocumentMoniker": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_customer_plugin\\dea_customer_plugin.csproj",
+              "RelativeDocumentMoniker": "dea_customer_plugin.csproj",
+              "ToolTip": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_customer_plugin\\dea_customer_plugin.csproj",
+              "RelativeToolTip": "dea_customer_plugin.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-03T14:48:17.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_customer_plugin\\app.config",
+              "RelativeDocumentMoniker": "app.config",
+              "ToolTip": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_customer_plugin\\app.config",
+              "RelativeToolTip": "app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-03T14:13:00.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlockCreditLimitOnFrozenStatusPreImage.cs",
+              "DocumentMoniker": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_customer_plugin\\BlockCreditLimitOnFrozenStatusPreImage.cs",
+              "RelativeDocumentMoniker": "BlockCreditLimitOnFrozenStatusPreImage.cs",
+              "ToolTip": "C:\\Users\\deaar\\OneDrive\\Desktop\\Misc\\Work\\Learning Javascript\\Microsoft Power Platform Dev\\labFirstPlugin\\dea_customer_plugin\\BlockCreditLimitOnFrozenStatusPreImage.cs",
+              "RelativeToolTip": "BlockCreditLimitOnFrozenStatusPreImage.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvzwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T14:07:23.127Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
