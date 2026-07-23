@@ -41,18 +41,18 @@ Features include:
 ## Repository Structure
 
 ```
-Mini-CRM/
+Mini-CRM-Solution/
 │
-├── PowerPlatformSolution/
+├── CrmPlugins/
+│   └── dea_customer_plugin/
+│   └── dea_lead_plugin/
+│
+├── EditablePCF/
+│
+├── MiniCrmUnpackaged/
 │   └── Unpacked solution
 │
-├── PCF/
-│   └── EditablePCF/
-│
-├── Plugins/
-│   └── CRMPlugins/
-│
-├── screenshots/
+├── Screenshots/
 │
 └── README.md
 ```
@@ -61,7 +61,7 @@ Mini-CRM/
 
 ## Custom Components
 
-### Editable PCF Control
+### Editable PCF
 
 A custom PCF control replacing the standard text field with an editable interface featuring:
 
@@ -70,11 +70,36 @@ A custom PCF control replacing the standard text field with an editable interfac
 - Save functionality
 - Dataverse data binding
 
-### Dataverse Plugin
+### dea_customer_plugin Dataverse Plugin
 
-Custom C# plugin implementing business logic within Dataverse.
+A custom Dataverse C# plugin that prevents users from modifying a customer's credit limit when the customer account is marked as Frozen.
+The plugin executes before the record is saved and validates the requested change against the previous state of the record using a Pre-Image.
 
-*(Describe what your plugin actually does here.)*
+When a customer record is updated, the plugin:
+
+- Retrieves the record being updated (Target)
+- Retrieves the configured Pre-Image
+- Reads the customer's current status
+- Compares the previous credit limit with the new value
+- Blocks the save operation if the customer status is Frozen and the credit limit has been modified.
+
+If the validation fails, the user receives the message:
+
+"This customer is frozen. You cannot change credit limit."
+
+### dea_lead_plugin Dataverse Plugin
+
+A custom Dataverse C# plugin that automatically formats lead names using a consistent naming convention during record creation and updates.
+The plugin executes before the record is saved and ensures every lead follows the organization's required naming format.
+
+When a lead is created or updated, the plugin:
+
+- Retrieves the target lead record
+- Reads the Lead Name field
+- Verifies that a value exists
+- Checks whether the name already starts with LEAD-
+- If not, automatically prefixes the lead name using the current year
+- Saves the updated value before the record is written to Dataverse
 
 ---
 
