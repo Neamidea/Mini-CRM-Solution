@@ -26,6 +26,7 @@ Features include:
 - Power Automate
 - Power Apps Component Framework (PCF)
 - TypeScript
+- JavaScript
 - C#
 - .NET
 - Visual Studio & Visual Studio Code
@@ -50,7 +51,7 @@ Mini-CRM-Solution/
 ├── EditablePCF/
 │
 ├── MiniCrmUnpackaged/
-│   └── Unpacked solution
+│   └── Unpacked solution containing client scripts under Web Resources folder
 │
 ├── Screenshots/
 │
@@ -61,7 +62,7 @@ Mini-CRM-Solution/
 
 ## Custom Components
 
-### Editable PCF
+### Editable PCF (TypeScript)
 
 A custom PCF control replacing the standard text field with an editable interface featuring:
 
@@ -70,7 +71,7 @@ A custom PCF control replacing the standard text field with an editable interfac
 - Save functionality
 - Dataverse data binding
 
-### dea_customer_plugin Dataverse Plugin
+### dea_customer_plugin Dataverse Plugin (C#, .NET)
 
 A custom Dataverse C# plugin that prevents users from modifying a customer's credit limit when the customer account is marked as Frozen.
 The plugin executes before the record is saved and validates the requested change against the previous state of the record using a Pre-Image.
@@ -87,7 +88,7 @@ If the validation fails, the user receives the message:
 
 "This customer is frozen. You cannot change credit limit."
 
-### dea_lead_plugin Dataverse Plugin
+### dea_lead_plugin Dataverse Plugin (C#, .NET)
 
 A custom Dataverse C# plugin that automatically formats lead names using a consistent naming convention during record creation and updates.
 The plugin executes before the record is saved and ensures every lead follows the organization's required naming format.
@@ -100,6 +101,18 @@ When a lead is created or updated, the plugin:
 - Checks whether the name already starts with LEAD-
 - If not, automatically prefixes the lead name using the current year
 - Saves the updated value before the record is written to Dataverse
+
+### dea_autoFillOpportunityName Client Script (JavaScript)
+
+When creating a new opportunity and customer topic are selected, set Opportunity Name automatically to a standardized format. Script runs OnSave and OnChange.
+
+### dea_calculateTotalAmount Client Script (JavaScript)
+
+Set Total Amount field to calculated result based on quantity and unit price. Script runs OnChange.
+
+### dea_checkEstimatedRevenue Client Script (JavaScript)
+
+If Estimated Revenue field is set above 10.000, show form notification "High value opportunity - manager review may be required.". Script runs OnChange.
 
 ---
 
