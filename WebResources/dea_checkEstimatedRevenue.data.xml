@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{9eb601d9-a25a-f111-bec7-000d3adf53bd}</WebResourceId>
+  <Name>dea_checkEstimatedRevenue</Name>
+  <DisplayName>showWarningForHighValueOpportunities</DisplayName>
+  <LanguageCode>0</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/dea_checkEstimatedRevenue9EB601D9-A25A-F111-BEC7-000D3ADF53BD</FileName>
+</WebResource>

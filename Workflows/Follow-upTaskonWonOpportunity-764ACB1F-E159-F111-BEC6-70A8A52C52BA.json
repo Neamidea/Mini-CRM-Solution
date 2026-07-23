@@ -1,0 +1,84 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "dea_sharedcommondataserviceforapps_ab418"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_googletasks": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "dea_sharedgoogletasks_72e40"
+        },
+        "api": {
+          "name": "shared_googletasks"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "dbd122a8-c871-40c9-a413-e2690d267036"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "dea_opportunity",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "dea_salesstage",
+              "subscriptionRequest/filterexpression": "dea_salesstage eq 3"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      },
+      "actions": {
+        "Create_a_task_in_a_task_list": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "ee7a3556-1be7-4b7a-98f0-170bee942efb"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "taskListId": "MDMxNzA4OTg5NDUzNzU1NzI4NTE6MDow",
+              "task/title": "Follow up with customer",
+              "task/notes": "Follow up regarding opportunity",
+              "task/due": "@formatDateTime(addDays(triggerOutputs()?['body/modifiedon'], 3), 'yyyy-MM-ddTHH:mm:ssZ')"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_googletasks",
+              "operationId": "CraeteTask",
+              "connectionName": "shared_googletasks"
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

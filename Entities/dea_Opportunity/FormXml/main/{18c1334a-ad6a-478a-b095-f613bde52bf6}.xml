@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{18c1334a-ad6a-478a-b095-f613bde52bf6}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{D5F316AC-16CA-418A-AA2B-14CAB8C7BC97}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{6400E4AB-C246-49C2-BF4E-8B5F0A913D70}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{920BCBBE-FB95-4F3F-887E-4187CF014757}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="dea_opportunityname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dea_OpportunityName" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c8c3f45d-d8b7-4bfd-a854-a85002d77591}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity Name" languagecode="1033" />
+                        </labels>
+                        <control id="dea_opportunityname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="dea_opportunityname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7ff9c17e-808a-4ee2-8cea-111654e2dadd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer" languagecode="1033" />
+                        </labels>
+                        <control id="dea_customer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dea_customer" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b767c019-a630-46cb-8e06-e5e882fb12a0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Estimated Revenue" languagecode="1033" />
+                        </labels>
+                        <control id="dea_estimatedrevenue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="dea_estimatedrevenue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{200fae6a-e030-4416-85be-eef58abb66ef}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Probability %" languagecode="1033" />
+                        </labels>
+                        <control id="dea_probability" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="dea_probability" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ebe2532-2dce-4de3-a326-184978e29637}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Expected Close Date" languagecode="1033" />
+                        </labels>
+                        <control id="dea_expectedclosedate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="dea_expectedclosedate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{27c62c94-6455-4d56-8006-473e4ce0e8ab}">
+                        <labels>
+                          <label description="Sales Stage" languagecode="1033" />
+                        </labels>
+                        <control id="dea_salesstage" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="dea_salesstage" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c2346ca4-180b-40a8-9349-ef8fc95dff7e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lead" languagecode="1033" />
+                        </labels>
+                        <control id="dea_lead" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dea_lead" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ceefa563-1568-4963-ae46-f0cd1666fcad}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Topic" languagecode="1033" />
+                        </labels>
+                        <control id="dea_topic" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="dea_topic" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{ce42c447-6ad4-4abb-a0a5-d68d9a0a0ea7}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{3c34d372-f46c-44a3-b7eb-b4e78a25464f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1a7c6c7c-a886-4761-a8e9-1bf8319213ee}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{08a82b3f-63b6-4ec6-b04a-ebc506fe85b5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{43316A00-324F-41BF-B2A9-D992C033E587}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{95744566-c0da-4064-8c43-b1e296c92bb8}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b855eba9-f0b2-4ad2-ba9b-6a8770f11078}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{98353337-f284-4264-be03-2785f8d24d8b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{0b6bfe70-e936-46d9-aa28-7b2601826209}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <formLibraries>
+        <Library name="dea_autoFillOpportunityName" libraryUniqueId="{8695668e-5bf6-4702-9746-69972730a14a}" />
+        <Library name="dea_checkEstimatedRevenue" libraryUniqueId="{c0c4fe3f-608a-49cf-8049-78e7e7a7075c}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="dea_opportunityname">
+          <Handlers>
+            <Handler functionName="autofillOpportunityName" libraryName="dea_autoFillOpportunityName" handlerUniqueId="{e6a1e141-d912-4660-9b56-d19b208cddba}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="dea_estimatedrevenue">
+          <Handlers>
+            <Handler functionName="checkEstimatedRevenue" libraryName="dea_checkEstimatedRevenue" handlerUniqueId="{63b8ec05-6567-414b-9351-f4b2d81272f3}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="autofillOpportunityName" libraryName="dea_autoFillOpportunityName" handlerUniqueId="{cc7eed08-5c2e-49a9-813b-51610f131cee}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

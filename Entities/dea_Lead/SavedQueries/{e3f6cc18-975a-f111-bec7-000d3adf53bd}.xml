@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e3f6cc18-975a-f111-bec7-000d3adf53bd}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="dea_leadname" select="1" icon="1" preview="1">
+        <row name="result" id="dea_leadid">
+          <cell name="dea_leadname" width="200" />
+          <cell name="dea_topic" width="100" />
+          <cell name="dea_leadrating" width="109" />
+          <cell name="dea_estimatedbudget" width="140" />
+          <cell name="dea_source" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="createdon" width="105" />
+          <cell name="dea_status" width="100" />
+          <cell name="dea_email" width="100" />
+          <cell name="dea_phone" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="dea_lead">
+          <attribute name="dea_leadname" />
+          <attribute name="dea_leadid" />
+          <attribute name="dea_topic" />
+          <attribute name="dea_estimatedbudget" />
+          <attribute name="dea_source" />
+          <attribute name="ownerid" />
+          <attribute name="createdon" />
+          <attribute name="dea_status" />
+          <attribute name="dea_email" />
+          <attribute name="dea_phone" />
+          <attribute name="dea_leadrating" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Hot Leads" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

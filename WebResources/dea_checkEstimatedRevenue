@@ -1,0 +1,31 @@
+// If Estimated Revenue is above 10,000, show form notification
+
+function formOnLoad(executionContext) {
+    var formContext = executionContext.getFormContext();
+    console.log("form loaded");
+
+    var estimatedRevenueAttr = formContext?.getAttribute("dea_estimatedrevenue");
+    if (estimatedRevenueAttr) {
+        estimatedRevenueAttr.addOnChange(checkEstimatedRevenue);
+    }
+}
+
+function checkEstimatedRevenue(executionContext) {
+    console.log("checkEstimatedRevenue TRIGGERED");
+
+    var formContext = executionContext.getFormContext();
+
+    var estimatedRevenueAttr = formContext?.getAttribute("dea_estimatedrevenue");
+
+    if (!estimatedRevenueAttr) {
+        return;
+    }
+
+    var estimatedRevenue = estimatedRevenueAttr.getValue();
+
+    if (estimatedRevenue > 10000) {
+        formContext.ui.setFormNotification("High value opportunity - manager review may be required.", "WARNING", "highValueOpportunity");
+    } else {
+        formContext.ui.clearFormNotification("highValueOpportunity");
+    }
+}

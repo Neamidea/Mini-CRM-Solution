@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{779c50f5-90c1-49f8-9e41-dd0a8223d34e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="dea_opportunityname" select="1" icon="1" preview="1">
+        <row name="result" id="dea_opportunityid">
+          <cell name="dea_opportunityname" width="300" />
+          <cell name="dea_salesstage" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="dea_opportunity">
+          <attribute name="dea_opportunityid" />
+          <attribute name="dea_opportunityname" />
+          <attribute name="createdon" />
+          <order attribute="dea_opportunityname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="dea_salesstage" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Opportunities" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

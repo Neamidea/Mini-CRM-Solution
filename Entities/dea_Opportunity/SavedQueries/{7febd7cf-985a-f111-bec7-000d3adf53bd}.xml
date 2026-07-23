@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{7febd7cf-985a-f111-bec7-000d3adf53bd}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="dea_opportunityname" select="1" icon="1" preview="1">
+        <row name="result" id="dea_opportunityid">
+          <cell name="dea_opportunityname" width="200" />
+          <cell name="dea_customer" width="100" />
+          <cell name="dea_estimatedrevenue" width="149" />
+          <cell name="dea_probability" width="118" />
+          <cell name="dea_salesstage" width="105" />
+          <cell name="dea_expectedclosedate" width="158" />
+          <cell name="ownerid" width="100" />
+          <cell name="createdon" width="105" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="dea_opportunity">
+          <attribute name="dea_opportunityname" />
+          <attribute name="dea_opportunityid" />
+          <attribute name="dea_customer" />
+          <attribute name="dea_estimatedrevenue" />
+          <attribute name="dea_probability" />
+          <attribute name="dea_salesstage" />
+          <attribute name="dea_expectedclosedate" />
+          <attribute name="ownerid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Open Opportunities" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

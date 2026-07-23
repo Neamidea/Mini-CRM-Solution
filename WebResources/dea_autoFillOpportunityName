@@ -1,0 +1,21 @@
+// When Customer and Product/Topic are selected, set Opportunity Name automatically
+
+function autofillOpportunityName(executionContext) {
+    console.log("autofillOpportunityName TRIGGERED");
+
+    var formContext = executionContext.getFormContext();
+
+    var customerLookup = formContext?.getAttribute("dea_customer")?.getValue(); 
+    var topic = formContext?.getAttribute("dea_topic")?.getValue(); 
+
+    if (!customerLookup || customerLookup.length === 0 || !topic) {
+        return;
+    }
+
+    var customerName = customerLookup[0].name;
+    var topicName = topic;
+
+    var opportunityName = customerName + " - " + topicName;
+
+    formContext.getAttribute("dea_opportunityname").setValue(opportunityName); 
+}

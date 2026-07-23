@@ -1,0 +1,19 @@
+// calculate total amount based on quantity and unit price
+
+function calculateTotalAmount(executionContext) {
+    console.log("CalculateTotaAmount TRIGGERED");
+
+    var formContext = executionContext.getFormContext();
+
+    var quantity = formContext?.getAttribute("dea_quantity")?.getValue();
+    var unitPrice = formContext?.getAttribute("dea_unitprice")?.getValue();
+
+    if (!quantity || !unitPrice) {
+        formContext.getAttribute("dea_totalamount").setValue(null);
+        return;
+    }
+
+    var totalAmount = quantity * unitPrice;
+
+    formContext.getAttribute("dea_totalamount").setValue(totalAmount);
+}

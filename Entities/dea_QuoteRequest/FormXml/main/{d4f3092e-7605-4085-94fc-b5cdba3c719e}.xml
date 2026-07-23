@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d4f3092e-7605-4085-94fc-b5cdba3c719e}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{CC04811A-A77E-420F-8883-227CB8E919E7}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{7C3BE540-6A39-4B8C-97E4-4C8EE6300759}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{DA85C355-A13D-478B-BF89-54AE461F96A1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="dea_requestname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dea_RequestName" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b128dcc1-d2e7-482d-a75a-3d0399300663}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="dea_opportunity" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dea_opportunity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd6f1c93-102f-4aff-b751-8cbd10eab7f2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer" languagecode="1033" />
+                        </labels>
+                        <control id="dea_customer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dea_customer" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7e4c0545-d125-4b05-a971-1662a962446e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Product" languagecode="1033" />
+                        </labels>
+                        <control id="dea_product" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dea_product" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{524bfec7-9a40-4d4f-afa7-3d1b9eaa8cee}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Quantity" languagecode="1033" />
+                        </labels>
+                        <control id="dea_quantity" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="dea_quantity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{04bacd7b-1bbb-47d8-b2e0-4899efef3638}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unit Price" languagecode="1033" />
+                        </labels>
+                        <control id="dea_unitprice" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="dea_unitprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4276e0d1-0a2d-447f-88b4-0ba91e183e45}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Total Amount" languagecode="1033" />
+                        </labels>
+                        <control id="dea_totalamount" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="dea_totalamount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8177c868-635c-49e9-aa8e-455302ba01b2}">
+                        <labels>
+                          <label description="Approval Status" languagecode="1033" />
+                        </labels>
+                        <control id="dea_approvalstatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="dea_approvalstatus" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{06172a99-c4aa-43d7-af3e-abf095fe040e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{4c651aa9-b36d-4518-b655-c1e9942db47d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1ab48186-14e6-473d-96d2-a37cf504d5ad}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{35bc3ddd-6665-4c4d-8387-8dc228f5ceac}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{F534087D-E23C-45E0-86DC-C8A30DFFE0AE}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{14e70244-22d7-47ad-bc9a-80311cd104bb}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{9a220b2e-856d-4b9f-a71b-6928f78a889c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{808552e8-888f-4338-aa6f-852f4dee6cc0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f255debe-6e83-4c14-99d8-ded63697addd}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <formLibraries>
+        <Library name="dea_calculateTotalAmount" libraryUniqueId="{3785b236-ed2b-426b-8724-0d2ed3f9c5ac}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="dea_totalamount">
+          <Handlers>
+            <Handler functionName="calculateTotalAmount" libraryName="dea_calculateTotalAmount" handlerUniqueId="{499b761d-3b5f-4e14-8ce5-7152d2286660}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

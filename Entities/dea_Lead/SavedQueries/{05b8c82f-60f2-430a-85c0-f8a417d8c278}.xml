@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{05b8c82f-60f2-430a-85c0-f8a417d8c278}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="dea_leadname" select="1" icon="1" preview="1">
+        <row name="result" id="dea_leadid">
+          <cell name="dea_leadname" width="300" />
+          <cell name="dea_leadrating" width="150" />
+          <cell name="dea_status" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="dea_lead">
+          <attribute name="dea_leadid" />
+          <attribute name="dea_leadname" />
+          <attribute name="createdon" />
+          <order attribute="dea_leadname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="dea_leadrating" />
+          <attribute name="dea_status" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Leads" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

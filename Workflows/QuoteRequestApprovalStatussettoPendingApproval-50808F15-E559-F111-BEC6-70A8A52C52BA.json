@@ -1,0 +1,149 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "dea_sharedcommondataserviceforapps_ab418"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_approvals": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "dea_sharedapprovals_b22e1"
+        },
+        "api": {
+          "name": "shared_approvals"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "f3067399-b6b6-4372-9a63-4c9f836ad8c2"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "dea_quoterequest",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "dea_approvalstatus",
+              "subscriptionRequest/filterexpression": "dea_approvalstatus eq 1"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      },
+      "actions": {
+        "Approval_for_Quotes": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "718492cd-06e4-4635-a5db-4f4769ed3672"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "approvalType": "Basic",
+              "WebhookApprovalCreationInput/title": "Quote Approval Request",
+              "WebhookApprovalCreationInput/assignedTo": "petar.vasev@students.finki.ukim.mk",
+              "WebhookApprovalCreationInput/details": "@triggerOutputs()?['body/dea_requestname']",
+              "WebhookApprovalCreationInput/enableNotifications": true,
+              "WebhookApprovalCreationInput/enableReassignment": true
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_approvals",
+              "operationId": "StartAndWaitForAnApproval",
+              "connectionName": "shared_approvals"
+            }
+          }
+        },
+        "Condition": {
+          "actions": {
+            "Update_a_row": {
+              "metadata": {
+                "operationMetadataId": "9a01740e-a101-459f-9fa4-00041310094a"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "parameters": {
+                  "entityName": "dea_quoterequests",
+                  "recordId": "@triggerOutputs()?['body/dea_quoterequestid']",
+                  "item/dea_approvalstatus": 2
+                },
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "operationId": "UpdateOnlyRecord",
+                  "connectionName": "shared_commondataserviceforapps"
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Approval_for_Quotes": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Update_a_row_2": {
+                "metadata": {
+                  "operationMetadataId": "8cb88077-1daf-49f0-9816-2036ac0cec28"
+                },
+                "type": "OpenApiConnection",
+                "inputs": {
+                  "parameters": {
+                    "entityName": "dea_quoterequests",
+                    "recordId": "@triggerOutputs()?['body/dea_quoterequestid']",
+                    "item/dea_approvalstatus": 3
+                  },
+                  "host": {
+                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                    "operationId": "UpdateOnlyRecord",
+                    "connectionName": "shared_commondataserviceforapps"
+                  }
+                }
+              }
+            }
+          },
+          "expression": {
+            "and": [
+              {
+                "equals": [
+                  "@outputs('Approval_for_Quotes')?['body/outcome']",
+                  "Approve"
+                ]
+              }
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f16de41d-7d6c-43bf-9054-3947043b99b5"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

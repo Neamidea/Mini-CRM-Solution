@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{468787aa-66af-49a5-9ed8-f579e242ffc5}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{9F2ACCEC-A6D5-4AC1-805B-7587BF2D3CEA}" IsUserDefined="1" name="tab_general_customer">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{612B6F08-ADE4-4C42-B085-9B4D4339D4EF}" name="tab_customer_general">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{C8C7C514-B102-43C4-A47B-CDF4C4137CF0}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="dea_customername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dea_CustomerName" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0d484088-55a9-4d4d-b716-6ec1c6bf5c94}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer Name" languagecode="1033" />
+                        </labels>
+                        <control id="dea_customername" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="dea_customername" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{14966819-9d1c-4202-95ce-1bae4f943eef}">
+                        <labels>
+                          <label description="Customer Type" languagecode="1033" />
+                        </labels>
+                        <control id="dea_customertype" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="dea_customertype" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{67dfcc92-cd49-48c8-aed3-e0d84bf5084b}">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="dea_email" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="dea_email" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{84c24d49-0145-4925-8e46-d19bed20cb8f}">
+                        <labels>
+                          <label description="Phone" languagecode="1033" />
+                        </labels>
+                        <control id="dea_phone" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="dea_phone" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4818782b-6c67-43cf-9259-2c88001c0224}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="dea_status" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="dea_status" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c9196cf0-cce9-4b4e-b966-7ac0336a7ddb}">
+                        <labels>
+                          <label description="Credit Limit" languagecode="1033" />
+                        </labels>
+                        <control id="dea_creditlimit" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="dea_creditlimit" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{2deb81fa-1a13-4396-a817-31e0d5b43e5b}" rowspan="4" colspan="1" auto="false" showlabel="true">
+                        <labels>
+                          <label description="Connected Opportunities" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>dea_opportunity_Customer_dea_customer</RelationshipName>
+                            <TargetEntityType>dea_opportunity</TargetEntityType>
+                            <ViewId>{D2F0C962-995A-F111-BEC7-000D3ADF53BD}</ViewId>
+                            <ViewIds>{779C50F5-90C1-49F8-9E41-DD0A8223D34E},{D2F0C962-995A-F111-BEC7-000D3ADF53BD}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="b65721d9-3740-40c0-af2e-394a1c5d837f" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Address" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="3b2369fd-958a-4228-bf70-2cbbdcfa2c90" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{2f407d89-f779-4dc0-af0b-ec626be52da0}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Address Line 1" languagecode="1033" />
+                        </labels>
+                        <control id="dea_addressline1" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="dea_addressline1" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{69d5d2e2-f77c-4085-9042-eb4529ffeee6}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Address Line 2" languagecode="1033" />
+                        </labels>
+                        <control id="dea_addressline2" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="dea_addressline2" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{40a54173-5325-4283-b6b3-da1bd5cee3f1}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                        </labels>
+                        <control id="dea_city" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="dea_city" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{695ca178-1d18-48a7-bfb6-4b2d43dfe79e}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Postal Code" languagecode="1033" />
+                        </labels>
+                        <control id="dea_postalcode" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="dea_postalcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9db12beb-a94d-40f0-8467-8be63e375c17}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="dea_country" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="dea_country" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{f1a5116b-14a4-4f22-972e-fa23ea0cf5f9}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f01cdb4a-1caa-4dd2-9e2e-425461229ae8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{374a099e-bfab-4044-aa3a-513346aecaef}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4a41f432-268d-493a-a22c-c706cdebfec7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{D8FD987B-912D-4E87-B02F-8BC5C658B897}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{f418875b-1ac7-489d-a0e9-95a341906adc}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{c3779db7-7fea-49af-bd88-f18e5447e9d0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{20b3a52b-56ce-4aa9-b2fc-7693d75f7b53}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{17967ad1-c3ce-4f03-b317-8bfd5f3029af}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
